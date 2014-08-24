@@ -21,3 +21,18 @@ will be more difficult.
 
 Please find more information in manual.rst.
 
+
+PFR Specific:
+
+We cannot use curl to get the irods archive package from behind
+the PFR firewall. Need to manually download the package.
+
+ftp://ftp.renci.org/pub/irods/build/irods_external_RedHatCompatible_CentOS6.tar.gz
+
+Must be copied to;
+
+/irods/external/rods_external.tar.gz
+
+before running make.
+
+
