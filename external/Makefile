@@ -42,7 +42,8 @@ PGUNIXODBCARCHIVE=postgresql-$(PG_VERSION)_unixODBC-$(UNIXODBC_VERSION)-$(OSNAME
 
 default :
 	@echo "Getting $(IRODSEXTERNALARCHIVE) -> $(IRODSEXTERNALLOCAL)..."
-	@curl -o $(IRODSEXTERNALLOCAL) -z $(IRODSEXTERNALLOCAL) $(RENCI_FTP_BUILD)/$(IRODSEXTERNALARCHIVE) > /dev/null 2>&1
+	#@curl -o $(IRODSEXTERNALLOCAL) -z $(IRODSEXTERNALLOCAL) $(RENCI_FTP_BUILD)/$(IRODSEXTERNALARCHIVE) > /dev/null 2>&1
+	@echo "Cannot use the curl command behind PFR filewall, need to manually obtain the archive $(IRODSEXTERNALARCHIVE) and put it here -> $(IRODSEXTERNALLOCAL)..."
 	@$(MAKE) $(FAKETARGETFORMAKE)
 
 $(PGUNIXODBCARCHIVE) :
