@@ -1,0 +1,15 @@
+gcc-c++
+make
+python-devel
+rpm-build
+wget
+help2man
+fuse-devel
+curl-devel
+bzip2-devel
+zlib-devel
+pam-devel
+openssl-devel
+libxml2-devel
+krb5-devel
+unixODBC-devel
